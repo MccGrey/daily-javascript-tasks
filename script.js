@@ -512,56 +512,81 @@ console.log(age1, age2, age3);
 // const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 // console.log(total);
 
-const array = [
-    'Draco',
-    'soulja-boy',
-    2037-1997,
-    'rapper',
-    ['drake', 'kanye', 'hover', 'Nas']
-]
+// const array = [
+//     'Draco',
+//     'soulja-boy',
+//     2037-1997,
+//     'rapper',
+//     ['drake', 'kanye', 'hover', 'Nas']
+// ]
 
-//object literal syntax
+// //object literal syntax
 
-const details = {
+// const details = {
+//     firstName: 'Draco',
+//     lastName: 'soulja-boy',
+//     age: 2037-1997,
+//     job: 'rapper',
+//     friends: ['drake', 'kanye', 'hover', 'Nas']
+// }
+
+// console.log(details);
+
+// console.log(details.job);
+// console.log(details['job']);
+
+// const nameKey = 'Name';
+// console.log(details['first' + nameKey]);
+// console.log(details['last' + nameKey]);
+
+
+// const interestedIn = prompt('what would you like to kow about homie? firstName, lastname, age, job, and friends');
+
+// console.log(details[interestedIn]);
+
+// if (details[interestedIn]) {
+//     console.log(details[interestedIn])
+// }else {
+//     console.log('input not found, please choose between firstName, lastname, Job, age, friends');
+// }
+
+// details.location = 'L.A';
+// details['hobby'] = 'art';
+
+// console.log(details);
+
+// console.log(`${details.firstName} has ${details.friends.length} friends, and his best friends name is' ${details.friends[0]}`);
+
+    const details = {
     firstName: 'Draco',
     lastName: 'soulja-boy',
-    age: 2037-1997,
-    job: 'rapper',
-    friends: ['drake', 'kanye', 'hover', 'Nas']
-}
+    birthYear: 1997,
+    job : 'rapper',
+    friends: ['drake', 'kanye', 'hover', 'Nas'],
+    hasDriversLicense: true,
 
-console.log(details);
+    // calcAge: function(birthYear) {
+    //     return 2037 - birthYear;
+        // calcAge: function() {
+        //     return 2037 - this.birthYear;
+        // }
+        calcAge: function() {
+            this.age = 2037 - this.birthYear;
+            return this.age;
+        },
 
-console.log(details.job);
-console.log(details['job']);
+        getSummary: function() {
+            return `${this.firstName} is a ${this.calcAge()}-years old ${details.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+        }
+};
 
-const nameKey = 'Name';
-console.log(details['first' + nameKey]);
-console.log(details['last' + nameKey]);
+console.log(details.calcAge());
 
+console.log(details.age);
+console.log(details.age);
+console.log(details.age);
 
-const interestedIn = prompt('what would you like to kow about homie? firstName, lastname, age, job, and friends');
-
-console.log(details[interestedIn]);
-
-if (details[interestedIn]) {
-    console.log(details[interestedIn])
-}else {
-    console.log('input not found, please choose between firstName, lastname, Job, age, friends');
-}
-
-details.location = 'L.A';
-details['hobby'] = 'art';
-
-console.log(details);
-
-console.log(`${details.firstName} has ${details.friends.length} friends, and his best friends name is' ${details.friends[0]}`);
-
-
-
-
-
-
+console.log(details.getSummary());
 
 
 
