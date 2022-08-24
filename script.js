@@ -530,6 +530,42 @@ const details = {
     friends: ['drake', 'kanye', 'hover', 'Nas']
 }
 
+console.log(details);
+
+console.log(details.job);
+console.log(details['job']);
+
+const nameKey = 'Name';
+console.log(details['first' + nameKey]);
+console.log(details['last' + nameKey]);
+
+
+const interestedIn = prompt('what would you like to kow about homie? firstName, lastname, age, job, and friends');
+
+console.log(details[interestedIn]);
+
+if (details[interestedIn]) {
+    console.log(details[interestedIn])
+}else {
+    console.log('input not found, please choose between firstName, lastname, Job, age, friends');
+}
+
+details.location = 'L.A';
+details['hobby'] = 'art';
+
+console.log(details);
+
+console.log(`${details.firstName} has ${details.friends.length} friends, and his best friends name is' ${details.friends[0]}`);
+
+
+
+
+
+
+
+
+
+
 
 
 
