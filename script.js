@@ -500,21 +500,35 @@ console.log(age1, age2, age3);
 // }
 
 
-const calTip = function(bill) {
-    return bill >= 50 && bill <= 300 ? bill *.15 : bill * .2
+// const calTip = function(bill) {
+//     return bill >= 50 && bill <= 300 ? bill *.15 : bill * .2
+// }
+
+// const bills = [125, 555, 44];
+// const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+
+// console.log(bills, tips);
+
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(total);
+
+const array = [
+    'Draco',
+    'soulja-boy',
+    2037-1997,
+    'rapper',
+    ['drake', 'kanye', 'hover', 'Nas']
+]
+
+//object literal syntax
+
+const details = {
+    firstName: 'Draco',
+    lastName: 'soulja-boy',
+    age: 2037-1997,
+    job: 'rapper',
+    friends: ['drake', 'kanye', 'hover', 'Nas']
 }
-
-const bills = [125, 555, 44];
-const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
-
-console.log(bills, tips);
-
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(total);
-
-
-
-
 
 
 
