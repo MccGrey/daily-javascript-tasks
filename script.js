@@ -594,6 +594,7 @@ console.log(age1, age2, age3);
 
 // console.log(details.getSummary());
 
+/* TASK COMPLETE
 const mark = {
         fullName: 'Mark Miller',
         mass: 78,
@@ -625,11 +626,14 @@ const mark = {
     } else {
         console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s BMI (${mark.calcBMI()})!`)
     }
+*/
 
-    // const higherBMI = bill <= 300 && bill >= 50 ? bill * 0.15 :
-    // bill * 0.2;
-    // console.log(`the bill was ${bill} and the tip would be ${tip} so in other words the total would be ${bill + tip}`);
 
+
+    //loops
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${i}`);
+    }
 
 
 
