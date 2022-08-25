@@ -631,25 +631,47 @@ const mark = {
 
 
     //loops
-    for (let i = 1; i <= 10; i++) {
-        console.log(`${i}`);
-    }
+    // for (let i = 1; i <= 10; i++) {
+    //     console.log(`${i}`);
+    // }
+
+const jonasArray = [
+    'jonas', 
+    'lampard',
+    2037 - 1997,
+    'teacher',
+    ['drake', 'neliux', 'knaye']
+];
+
+const types = []
+
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i], typeof jonasArray[i]);
+
+
+    //fillingthe typses array
+// types[i] = typeof jonasArray[i];
+
+types.push(typeof jonasArray[i]);
+
+}
+
+
+console.log(types);
 
 
 
 
 
+const years = [1991, 1992, 1993, 1994, 1995, 1996];
+const ages = [];
 
+for (let i = 0; i < years.length; i++) {
+ages.push(2037 - years[i]); 
 
+}
 
-
-
-
-
-
-
-
-
+console.log(ages);
 
   
 
