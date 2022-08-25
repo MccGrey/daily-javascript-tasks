@@ -635,6 +635,9 @@ const mark = {
     //     console.log(`${i}`);
     // }
 
+/*
+
+
 const jonasArray = [
     'jonas', 
     'lampard',
@@ -688,11 +691,30 @@ for (let i = 0; i < jonasArray.length; i++) {
     console.log(jonasArray[i],typeof jonasArray[i]);
 }
   
+*/
 
+//loop bacwards
 
+const jonas = [
+    'jonas',
+    'lampard',
+    2037 - 1993,
+    'rapper',
+    ['drake', 'kanye', 'steve']
+]
 
+for ( let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
 
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`--------------START LIFTING WEIGHT ${exercise}`)
+    
+for (let rep = 1; rep < 6; rep++) {
+    console.log(`exersice ${exercise}; lifthing weight repitition ${rep}`)
+}
 
+}
 
 
 
