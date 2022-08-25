@@ -673,6 +673,20 @@ ages.push(2037 - years[i]);
 
 console.log(ages);
 
+
+// continue and break statement
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== 'string') continue;
+
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[1] === Number) break;
+
+    console.log(jonasArray[i],typeof jonasArray[i]);
+}
   
 
 
