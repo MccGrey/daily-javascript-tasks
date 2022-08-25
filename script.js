@@ -571,6 +571,8 @@ console.log(age1, age2, age3);
 
 //     // calcAge: function(birthYear) {
 //     //     return 2037 - birthYear;
+
+
 //         // calcAge: function() {
 //         //     return 2037 - this.birthYear;
 //         // }
@@ -592,12 +594,41 @@ console.log(age1, age2, age3);
 
 // console.log(details.getSummary());
 
+const mark = {
+        fullName: 'Mark Miller',
+        mass: 78,
+        height: 1.69,
 
+        calcBMI: function() {
+            this.BMI = this.mass / this.height ** 2
+            return this.BMI
+        },
 
+    }
+    console.log(mark.calcBMI());
 
+    const john = {
+        fullName: 'John Smith',
+        mass: 107,
+        height: 1.95,
 
+        calcBMI: function() {
+            this.BMI = this.mass / this.height ** 2
+            return this.BMI
+        },
+    }
 
+    console.log(john.calcBMI());
 
+    if (mark.calcBMI() > john.calcBMI()) {
+        console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s BMI (${john.calcBMI()})!`)
+    } else {
+        console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s BMI (${mark.calcBMI()})!`)
+    }
+
+    // const higherBMI = bill <= 300 && bill >= 50 ? bill * 0.15 :
+    // bill * 0.2;
+    // console.log(`the bill was ${bill} and the tip would be ${tip} so in other words the total would be ${bill + tip}`);
 
 
 
