@@ -557,36 +557,40 @@ console.log(age1, age2, age3);
 
 // console.log(`${details.firstName} has ${details.friends.length} friends, and his best friends name is' ${details.friends[0]}`);
 
-    const details = {
-    firstName: 'Draco',
-    lastName: 'soulja-boy',
-    birthYear: 1997,
-    job : 'rapper',
-    friends: ['drake', 'kanye', 'hover', 'Nas'],
-    hasDriversLicense: true,
 
-    // calcAge: function(birthYear) {
-    //     return 2037 - birthYear;
-        // calcAge: function() {
-        //     return 2037 - this.birthYear;
-        // }
-        calcAge: function() {
-            this.age = 2037 - this.birthYear;
-            return this.age;
-        },
 
-        getSummary: function() {
-            return `${this.firstName} is a ${this.calcAge()}-years old ${details.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
-        }
-};
 
-console.log(details.calcAge());
 
-console.log(details.age);
-console.log(details.age);
-console.log(details.age);
+//     const details = {
+//     firstName: 'Draco',
+//     lastName: 'soulja-boy',
+//     birthYear: 1997,
+//     job : 'rapper',
+//     friends: ['drake', 'kanye', 'hover', 'Nas'],
+//     hasDriversLicense: true,
 
-console.log(details.getSummary());
+//     // calcAge: function(birthYear) {
+//     //     return 2037 - birthYear;
+//         // calcAge: function() {
+//         //     return 2037 - this.birthYear;
+//         // }
+//         calcAge: function() {
+//             this.age = 2037 - this.birthYear;
+//             return this.age;
+//         },
+
+//         getSummary: function() {
+//             return `${this.firstName} is a ${this.calcAge()}-years old ${details.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+//         }
+// };
+
+// console.log(details.calcAge());
+
+// console.log(details.age);
+// console.log(details.age);
+// console.log(details.age);
+
+// console.log(details.getSummary());
 
 
 
