@@ -356,7 +356,7 @@ console.log(age2);
 
 // function expression
 //const calcAge2 = function (birthYear) {
-  //  return 2037 - birthYear;
+//  return 2037 - birthYear;
 //}
 
 //arrow function
@@ -630,10 +630,10 @@ const mark = {
 
 
 
-    //loops
-    // for (let i = 1; i <= 10; i++) {
-    //     console.log(`${i}`);
-    // }
+//loops
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${i}`);
+// }
 
 /*
 
@@ -693,8 +693,8 @@ for (let i = 0; i < jonasArray.length; i++) {
   
 */
 
-//loop bacwards
-
+//loop backwards
+/*
 const jonas = [
     'jonas',
     'lampard',
@@ -706,6 +706,10 @@ const jonas = [
 for ( let i = jonas.length - 1; i >= 0; i--) {
     console.log(i, jonas[i]);
 }
+*/
+//loop in loop
+
+/*
 
 for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`--------------START LIFTING WEIGHT ${exercise}`)
@@ -715,6 +719,38 @@ for (let rep = 1; rep < 6; rep++) {
 }
 
 }
+
+
+*/
+
+//WHILE LOOPS
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+//TASK
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 :
+    bill * 0.2;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+ const tips = [];
+ const total = [];
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    total.push(tip + bills[i]);
+}
+
+
+console.log(bills, tips, total);
+
+
+
+
+
+
 
 
 
