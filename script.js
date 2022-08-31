@@ -306,7 +306,7 @@ console.log(`the bill was ${bill} and the tip would be ${tip} so in other words 
 
 */
 
-'use strict';
+"use strict";
 /*
 let hasDriversLicense = false;
 const passTest = true;
@@ -412,7 +412,6 @@ console.log(yearsUntilRetirement(1991, 'lorde'));
 console.log(yearsUntilRetirement(1993, 'jake paul'));
 */
 
-
 /*
 //ASSIGNMENT
 const calAverage = (a, b, c) => (a + b +c) / 3;
@@ -499,7 +498,6 @@ console.log(age1, age2, age3);
 //     console.log('sorry youre a one man army')
 // }
 
-
 // const calTip = function(bill) {
 //     return bill >= 50 && bill <= 300 ? bill *.15 : bill * .2
 // }
@@ -539,7 +537,6 @@ console.log(age1, age2, age3);
 // console.log(details['first' + nameKey]);
 // console.log(details['last' + nameKey]);
 
-
 // const interestedIn = prompt('what would you like to kow about homie? firstName, lastname, age, job, and friends');
 
 // console.log(details[interestedIn]);
@@ -557,10 +554,6 @@ console.log(age1, age2, age3);
 
 // console.log(`${details.firstName} has ${details.friends.length} friends, and his best friends name is' ${details.friends[0]}`);
 
-
-
-
-
 //     const details = {
 //     firstName: 'Draco',
 //     lastName: 'soulja-boy',
@@ -571,7 +564,6 @@ console.log(age1, age2, age3);
 
 //     // calcAge: function(birthYear) {
 //     //     return 2037 - birthYear;
-
 
 //         // calcAge: function() {
 //         //     return 2037 - this.birthYear;
@@ -627,8 +619,6 @@ const mark = {
         console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s BMI (${mark.calcBMI()})!`)
     }
 */
-
-
 
 //loops
 // for (let i = 1; i <= 10; i++) {
@@ -729,69 +719,28 @@ for (let rep = 1; rep < 6; rep++) {
 
 //TASK
 const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 :
-    bill * 0.2;
-}
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
- const tips = [];
- const total = [];
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
 
 for (let i = 0; i < bills.length; i++) {
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    total.push(tip + bills[i]);
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  total.push(tip + bills[i]);
 }
-
 
 console.log(bills, tips, total);
 
-const calAverage = function(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
+const calAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
 
-    return sum / arr.length;
-}
+  return sum / arr.length;
+};
 console.log(calAverage(total));
-console.log(calAverage(tips))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(calAverage(tips));
