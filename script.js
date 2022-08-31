@@ -717,6 +717,7 @@ for (let rep = 1; rep < 6; rep++) {
 // let dice = Math.trunc(Math.random() * 6) + 1;
 // console.log(dice);
 
+/*
 //TASK
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -744,3 +745,43 @@ const calAverage = function (arr) {
 };
 console.log(calAverage(total));
 console.log(calAverage(tips));
+
+
+
+*/
+
+//===============================DEVELOPER SKILLS SECTION==============================================================
+
+// PROBLEM:
+// We work for a company building a smart home thermometer. Our recent task is this: given an array of temperatures of one DynamicsCompressorNode, calculate the temperature amplitude. keep in mind that someties there might be a sensor error.
+
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+
+// 1). undersanding the problem
+// - what is temp amplitude? answer: difference between highest and lowest temp
+// - how to compute max and min temperatures?
+// - what's a sensor error? and what to do?
+
+// 2). Breaking up the sub-problems
+// - how to ignore errors?
+// - find max value in temp Array
+// - find min value in temp Array
+// - subtract min from max and return it
+
+const calctempAmplitude = function (temps) {
+  let max = temps[0];
+  let min = temps[0];
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+
+  console.log(max, min);
+};
+calctempAmplitude([3, 7, 4]);
+//process
+//max = 3
+//max = 7
+// 3rd iteration nothing happens because max is 7
