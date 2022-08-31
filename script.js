@@ -771,17 +771,53 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 const calctempAmplitude = function (temps) {
   let max = temps[0];
   let min = temps[0];
+
   for (let i = 0; i < temps.length; i++) {
     const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
 
     if (curTemp > max) max = curTemp;
     if (curTemp < min) min = curTemp;
   }
 
   console.log(max, min);
+  return max - min;
 };
-calctempAmplitude([3, 7, 4]);
+
+const amp = calctempAmplitude(temperatures);
+console.log(amp);
 //process
 //max = 3
 //max = 7
 // 3rd iteration nothing happens because max is 7
+
+//PROBLEM 2
+//FUNCTION SHOULD RECEIVE TWO ARRAYS OF TEMPERATURES
+//1) understand the problen
+// - when there are two arrays do we implement functionality twice?
+// Node, just merge 2 arrays
+
+// 2) breaking up into subproblem
+// - how to merge 2 arrays
+
+const calctempAmplitudeNew = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const ampNew = calctempAmplitudeNew([3, 4, 8, 9], [7, 0, -7, -3]);
+console.log(ampNew);
