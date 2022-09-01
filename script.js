@@ -824,6 +824,8 @@ console.log(ampNew);
 
 */
 /* ==================DEBUGGING ======================================*/
+
+/*
 const measurekelvin = function () {
   const measurement = {
     type: "temp",
@@ -843,3 +845,6 @@ const measurekelvin = function () {
 
 //A) indetify
 console.log(measurekelvin());
+
+
+*/
