@@ -754,7 +754,7 @@ console.log(calAverage(tips));
 
 // PROBLEM:
 // We work for a company building a smart home thermometer. Our recent task is this: given an array of temperatures of one DynamicsCompressorNode, calculate the temperature amplitude. keep in mind that someties there might be a sensor error.
-
+/*
 const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 
 // 1). undersanding the problem
@@ -821,3 +821,25 @@ const calctempAmplitudeNew = function (t1, t2) {
 
 const ampNew = calctempAmplitudeNew([3, 4, 8, 9], [7, 0, -7, -3]);
 console.log(ampNew);
+
+*/
+/* ==================DEBUGGING ======================================*/
+const measurekelvin = function () {
+  const measurement = {
+    type: "temp",
+    unit: "celcius",
+
+    // C) fix
+    value: Number(prompt("degree celcius")),
+  };
+
+  // B) find
+  console.log(measurement);
+
+  console.log(measurement.value);
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+
+//A) indetify
+console.log(measurekelvin());
