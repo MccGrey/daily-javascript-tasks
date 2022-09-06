@@ -848,3 +848,36 @@ console.log(measurekelvin());
 
 
 */
+
+/*
+EXAMPLE [17, 21, 23] ill print "...17'c in 1 day"...21'c in 2 days... 23'c in 3days ...""
+create a function 'printforecast which takes in an array 'arr and logs a string like the above to the console.
+
+us the problem solving framework/: understand the problem and break it up into sub-problems:
+
+TEST DATA: 1: [17, 21, 23]
+TEST DATA : [12, 5, -5, 0, 4]
+
+*/
+
+// 1) UNDERSTANDING THE PROBLEM
+// - array transform to stringnseparated by ...
+// - what is the x days/? answer +1
+
+//2) geaking up int subproblems
+//- transform array into string
+// - transform each element to string with 'c
+// -  string needs to contin day (index + 1)
+//-add ... beytween elemnts and start and end of string
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+const printForecast = function (arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]}'C`;
+  }
+  console.log(str);
+};
+printForecast(data1);
